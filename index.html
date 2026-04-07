@@ -735,6 +735,7 @@
           <li>Deploy AI-assisted documentation and scheduling tools to reduce administrative turnaround by <strong>30%</strong>, enabling faster decision-making across a distributed organization.</li>
           <li>Own end-to-end planning and logistics for quarterly off-sites — managing budgets, vendor relationships, and stakeholder alignment to deliver high-impact experiences.</li>
           <li>Build centralized operational tracking systems that increased reporting accuracy and data accessibility by <strong>25%</strong>, giving leadership real-time visibility into team priorities.</li>
+          <li>Manage high-volume inbound and outbound communications with discretion — drafting replies, coordinating follow-ups, and maintaining strict confidentiality across sensitive internal matters.</li>
         </ul>
       </div>
     </div>
@@ -748,10 +749,11 @@
       <div>
         <div class="exp-role">Executive Administrator</div>
         <ul class="exp-bullets">
-          <li>Served as CEO's right hand and operational translator — converting executive strategy into execution-ready plans with clear ownership and accountability structures that drove a <strong>30% gain in leadership efficiency</strong>.</li>
+          <li>Served as CEO's right hand and operational translator — converting executive strategy into execution-ready plans with clear ownership, milestones, and accountability structures that drove a <strong>30% gain in leadership efficiency</strong>.</li>
+          <li>Produced board materials, executive briefings, and performance dashboards that sharpened organizational accountability and enabled data-driven decision-making at the leadership level.</li>
           <li>Functioned as internal IT project coordinator for system rollouts — partnering with technical teams to manage delivery, mitigate risk, and ensure end-user adoption, reducing project turnaround times by <strong>20%</strong>.</li>
+          <li>Handled confidential executive communications and sensitive organizational matters with strict discretion and professionalism across all stakeholder levels.</li>
           <li>Engineered sales enablement improvements by integrating CRM and DocuSign workflows — cutting friction in the contract cycle and accelerating revenue outcomes.</li>
-          <li>Produced board materials, executive briefings, and performance dashboards enabling data-driven decision-making at the leadership level.</li>
         </ul>
       </div>
     </div>
@@ -837,4 +839,13 @@
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserv
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+</script>
